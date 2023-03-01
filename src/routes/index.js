@@ -5,7 +5,7 @@ import Registr from '.././routes/auth/registr/Registr';
 import Singin from '.././routes/auth/signin/Singin';
 import Plp from '.././routes/plp/Plp';
 import SingleProduct from '.././components/singleProduct/SingleProduct';
-import AllProductsByCategory from '../components/allProductsByCategory/allProductsByCategory';
+import AllProductsByCategory from '../components/allProductsByCategory/AllProductsByCategory';
 
 
 const Routes = () => {

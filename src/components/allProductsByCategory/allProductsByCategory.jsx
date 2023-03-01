@@ -1,16 +1,16 @@
 import React from 'react';
-import './allProductsByCategory.css'
-import { FiArrowRight } from 'react-icons/fi'
-import { Swiper, SwiperSlide } from "swiper/react";
+import './AllProductsByCategory.css'
 import { Link, useParams } from 'react-router-dom';
 import UseFetchData from '../../hooks/useFetchData';
-import "swiper/css";
-import "swiper/css/pagination";
+import Container from '../../utils/Container';
+// import "swiper/css";
+// import "swiper/css/pagination";
 
 
 const AllProductsByCategory = () => {
     const categoryId = useParams()
     console.log(categoryId);
+    const categoryNameData = UseFetchData(`/categories/${categoryId.id}`)
     const categoryAllData = UseFetchData(`/categories/${categoryId.id}/products`)
 
     function trimDescription(str) {
@@ -19,14 +19,15 @@ const AllProductsByCategory = () => {
     
           return (
             <>
+              <Container>
               <div className="categoryId">
                   <div className="categoryId-heading">
-                      <h2 className="categoryId-title">Sponsored items customers also bought</h2>
-                      <div className="categoryId-heading-btn">
+                      <h2 className="categoryId-title">Category:  <span className='categoryName'> {categoryNameData.name}</span></h2>
+                      {/* <div className="categoryId-heading-btn">
                           <button>Slide to the side <FiArrowRight/></button>
-                      </div>
+                      </div> */}
                   </div>
-              <Swiper
+              {/* <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
                 pagination={{
@@ -47,26 +48,28 @@ const AllProductsByCategory = () => {
                   },
                 }} 
                 className="mySwiper"
-              >
+              > */}
                 <ul className="categoryId-card">
                 {
                   categoryAllData.map(Category => 
                     <div  className='categoryId__item' key={Category.id}> 
                       <li className='categoryId__name'>
-                        <SwiperSlide>
+                        {/* <SwiperSlide> */}
                           <Link to={`/products/${Category.id}`}>
                               <img className='categoryId-swiper__img' src={Category.images[0]} alt="" />
                               <h2 className='categoryId-swiper__title'>{Category.title}</h2>
                               <p className='categoryId-swiper__desc'>{trimDescription(Category.description)}</p>
+                              <p className='categoryId-swiper__price'>${Category.price}</p>
                           </Link>
-                        </SwiperSlide>
+                        {/* </SwiperSlide> */}
                       </li> 
                     </div>  
                       )
                 }
                 </ul>
-              </Swiper>
+              {/* </Swiper> */}
               </div>
+              </Container>
             </>
           );
         }    

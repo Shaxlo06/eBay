@@ -65,7 +65,7 @@ const Header = () => {
                             {
                                 categories.map(category => 
                                     <option key={category.id} className='categories__name'>
-                                    <Link to="/category">
+                                    <Link to={`/category/${category.id}`}>
                                         {category.name}
                                     </Link>
                                     </option>  

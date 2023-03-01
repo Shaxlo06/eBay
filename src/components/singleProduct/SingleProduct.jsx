@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import Container from '../../utils/Container';
 import Footer from '../../utils/Footer-bottom';
 import UseFetchData from '../../hooks/useFetchData';
+import AllProductsByCategory from '../allProductsByCategory/AllProductsByCategory';
 
 const SingleProduct = () => {
     const productIdData = useParams()
@@ -41,6 +42,7 @@ const SingleProduct = () => {
                 </div>
                 </div>
             </section>
+            <AllProductsByCategory/>
         </Container>
         <Footer/>
         </>

@@ -49,7 +49,7 @@ export default function FirstCategory() {
               <div  className='category-swiper__item' key={category.id}> 
                 <li className='category-swiper__name'>
                   <SwiperSlide>
-                    <Link to='/category'>
+                    <Link to={`/category/${category.id}`}>
                       <img className='category-swiper__img' src={category.image} alt="" />
                       <h2 className='category-swiper__title'>{category.name}</h2>
                     </Link>

@@ -11,18 +11,21 @@ const Categories = () => {
     return (
         <section className='categories'>
             <Container>
-                <ul className="categories-list">
-                    <li className='categories__name'>
+                <div className="categories-wrapper">               
+                    <div className="categories-links">
+                    <p className='categories__name'>
                         <Link to="/">Home</Link>
-                    </li>
-                    <li className='categories__name'>
-                    <Link to="/wishlist"><FiHeart/> Saved</Link>
-                    </li>
+                    </p>
+                    <p className='categories__name'>
+                        <Link to="/wishlist"><FiHeart/> Saved</Link>
+                    </p>
+                    </div>
+                    <ul className="categories-list">
                 {
                     categories.map(category => 
                         <div  className='categories__item' key={category.id}> 
                             <li className='categories__name'>
-                                <Link to="/category">
+                                <Link to={`/category/${category.id}`}>
                                     {category.name}
                                 </Link>
                             </li> 
@@ -30,6 +33,7 @@ const Categories = () => {
                     )
                 }
                 </ul>
+                </div>
             </Container>
         </section>
     );
