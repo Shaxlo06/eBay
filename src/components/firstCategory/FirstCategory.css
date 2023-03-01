@@ -1,0 +1,40 @@
+.category-swiper {
+   margin-bottom: 100px;
+   margin: 20px 40px;
+   text-align: center;
+   border-bottom: 1px solid #d4d4d4;
+   padding-bottom: 40px;
+}
+
+.category-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #191919;
+    margin-left: 10px;
+}
+
+.category-swiper__name {
+    width: 260px;
+    height: 200px;
+    background-color: #353535;
+    text-align: center;
+}
+
+.category-swiper__img {
+    width: 151px;
+    height: 151px;
+    border-radius: 50%;
+}
+
+.category-swiper__title {
+    font-size: 16px;
+    color: #353535;
+    font-weight: bold;
+    line-height: 62px;
+}
+
+
+
+

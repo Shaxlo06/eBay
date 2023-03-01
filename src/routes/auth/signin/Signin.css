@@ -1,0 +1,140 @@
+.singin-top {
+    margin: 20px 0;
+}
+
+.signin-form {
+    width: 355px;
+    margin: auto;
+}
+
+.signin-form-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;    
+    color: #151E27;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signin-form-subtitle {
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.signin-form-subtitle a {
+    text-decoration: none;
+}
+
+.signin-form-subtitle i {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #000000; text-align: center;
+}
+
+.signin-form-subtitle strong {
+    color: #3665F3;
+    text-decoration: underline;
+}
+
+.signin-form input {
+    width: 341px;
+    height: 40px;
+    background-color: #F7F7F7;
+    border: 1px solid #8F8F8F;
+    border-radius: 8px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.signin-form p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;  
+    color: #000000;
+}
+
+
+.signin-form-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+}
+
+.signin-form-btns button {
+    width: 345px;
+    height: 48px;
+    border-radius: 24px;
+    padding-left: 18px;
+}
+
+.signin-facebook-btn, .signin-google-btn, .signin-apple-btn {
+    display: flex;
+    align-items: center;
+    margin: auto; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.signin-facebook-btn {
+    color: white;
+    gap: 0 45px;
+    background-color: #4267B2;
+    border: 1px solid #4267B2;
+}
+
+.signin-google-btn, .signin-apple-btn {
+    color: #444444;
+    border: 1px solid #444444;
+    gap: 0 63px;
+}
+
+.signin-form-continueBtn {
+    width: 355px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #3665F3;
+    border: 1px solid #3665F3;
+    border-radius: 20px;
+    margin-top: 17px;
+    margin-bottom: 14px;
+    gap: 0 63px;
+}
+
+.signin-form-text-or {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-bottom-alert {
+    width: 300px;
+    padding: 23px;
+    background-color: #3665F3;
+    margin-top: 22px;
+}
+
+.form-bottom-alert p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.form-bottom-alert p svg {
+    margin-right: 15px;
+    vertical-align: sub;
+    font-size: 18px;
+}

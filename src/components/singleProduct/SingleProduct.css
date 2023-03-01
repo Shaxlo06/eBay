@@ -1,0 +1,119 @@
+.singleProduct {
+    margin: 43px 0;
+}
+
+.singleProduct-heading {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.singleProduct-left {
+    display: flex;
+    gap: 0 20px;
+}
+
+.singleProduct-img {
+    width: 502px;
+    height: 352px;
+}
+
+.singleProduct-similarImg {
+    width: 63px;
+    height: 63px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.singleProduct-right {
+    width: 470px;
+    margin-left: 30px;
+}
+
+.singleProduct-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.singleProduct-desc {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.singleProduct-at {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+.singleProduct-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.singleProduct-price-strong {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.singleProduct-buy {
+    width: 459px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.singleProduct-buy-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.singleProduct-buy-btns button {
+    width: 230px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.singleProduct-buy-buyNow {
+    color: white;
+    background-color: #0053A0;
+    border: 1px solid #0053A0;
+    
+}
+
+.singleProduct-buy-addCart {
+    color: white;
+    background-color: #3498CA;
+    border: 1px solid #3498CA;
+}
+
+.singleProduct-buy-addWatchlist {
+    color: #3665F3;
+    background-color: #fff;
+    border: 1px solid #3665F3;
+}

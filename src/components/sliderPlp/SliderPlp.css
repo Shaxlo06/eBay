@@ -1,0 +1,16 @@
+  .swiperPlp img {
+    height: 275px;
+    margin-bottom: 50px;
+    object-fit: cover;
+    width: 1312px;
+  }
+
+  .sliderPlp__title {
+    color: #333333;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 7px;
+  }
+  
