@@ -1,6 +1,5 @@
 .categories-wrapper {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .categories-links {
@@ -17,7 +16,6 @@
 
 .categories-list {
     display: flex;
-   
     align-items: center;
     padding: 0 20px;
     flex-wrap: wrap;
