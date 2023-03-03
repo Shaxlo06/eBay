@@ -44,8 +44,7 @@ const Header = () => {
                                 <a href="#" className="header-right-link "><FaUserCircle/>
                                 {
                                     createUserData ? createUserData : "My eBay"
-                                }
-                                   
+                                }                                   
                                 </a>
                             </li>
                         </ul>

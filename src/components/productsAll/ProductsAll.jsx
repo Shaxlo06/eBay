@@ -11,7 +11,6 @@ import UseFetchData from '../../hooks/useFetchData';
 
 export default function ProductsAll() {
   const productsAll = UseFetchData("/products")
-  console.log(productsAll);
 
     return (
       <>

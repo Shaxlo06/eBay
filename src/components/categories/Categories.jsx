@@ -7,7 +7,6 @@ import { FiHeart } from 'react-icons/fi'
 
 const Categories = () => {
     const categories = UseFetchData("/categories")
-    console.log(categories);
     return (
         <section className='categories'>
             <Container>

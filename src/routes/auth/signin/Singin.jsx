@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Signin.css'
 import Container from '../../../utils/Container';
 import Footer from '../../../utils/Footer-bottom';
@@ -7,15 +7,21 @@ import { FiAlertCircle } from 'react-icons/fi'
 import facebookBtn from '../../../images/facebookBtn.svg'
 import googleIcon from '../../../images/googleIcon.svg'
 import appleBtn from '../../../images/appleBtn.svg'
+import  { signInWithGoogle } from '../../../firebase/firebaseConfig'
+
 
 const Singin = () => {
+    const preventDefault = (e) => {
+        e.preventDefault()
+    }
+   
     return (
        <>
          <Container>
             <div className="singin-top">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png" width='117' height='48' alt="" />
             </div>
-            <form className="signin-form">
+            <form onClick={preventDefault} className="signin-form">
                 <h3 className='signin-form-title'>Hello</h3>
                 <p className='signin-form-subtitle'>
                     <Link to='/registr'>
@@ -23,7 +29,8 @@ const Singin = () => {
                         <strong> create an account</strong>
                     </Link>
                 </p>
-                <input type="email" placeholder='Email or username'/>
+                <input type="email" placeholder='Username'/>
+                <input type="email" placeholder='Email'/>
                 <p>Created your account with a mobile number?</p>
                 <p>Sign in with mobile</p>
                 <button className='signin-form-continueBtn'>Continue</button>
@@ -33,7 +40,7 @@ const Singin = () => {
                         <img src={facebookBtn} alt="" />
                         <b>Continue with Facebook</b>
                     </button>
-                    <button className="signin-google-btn">
+                    <button onClick={signInWithGoogle} className="signin-google-btn">
                         <img src={googleIcon} alt="" />
                         Continue with Google
                     </button>
@@ -52,7 +59,7 @@ const Singin = () => {
                     </p>
                 </div>
             </form>
-            
+
         </Container>
         <Footer/>
        </>
